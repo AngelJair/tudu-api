@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  mongo-db:
+    container_name: mongo_container
+    image: mongo:5.0.16
+    volumes:
+      - ./mongo:/data/db
+    ports:
+      - 27017:27017
